@@ -13,7 +13,13 @@ export default class Content {
         // }
 
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+        res.write("<head>")
+
+        res.write("</head>");
         res.write("<h1>Téglalap területe és kerülete</h1>");
+
+
+
         res.end();
     }
 }
